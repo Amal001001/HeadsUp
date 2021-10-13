@@ -17,13 +17,14 @@
         android:id="@+id/llTop">
 
         <TextView
+            android:id="@+id/tvTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FF8A80"
             android:gravity="center"
-            android:textColor="@color/white"
             android:text="Time: "
-            android:textSize="32sp"
-            android:id="@+id/tvTime"/>
+            android:textColor="@color/white"
+            android:textSize="32sp" />
 
     </LinearLayout>
 
@@ -37,15 +38,15 @@
         android:id="@+id/llCelebrity">
 
         <TextView
+            android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name"
-            android:textSize="48sp"
-            android:textAlignment="center"
-            android:textColor="@color/black"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
-            android:id="@+id/tvName"/>
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="#FF8A80"
+            android:textSize="48sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -92,11 +93,12 @@
             android:layout_marginBottom="24dp"/>
 
         <Button
+            android:id="@+id/btStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Start"
             android:layout_gravity="center"
-            android:id="@+id/btStart"/>
+            android:backgroundTint="#FF8A80"
+            android:text="Start" />
 
     </LinearLayout>
 

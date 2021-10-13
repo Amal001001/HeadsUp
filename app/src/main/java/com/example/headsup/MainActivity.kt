@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity() {
         llCelebrity = findViewById(R.id.llCelebrity)
 
         tvTime = findViewById(R.id.tvTime)
-        //timer =
 
         tvName = findViewById(R.id.tvName)
         tvTaboo1 = findViewById(R.id.tvTaboo1)
@@ -174,13 +173,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSaveInstanceState(saveInstanceState: Bundle) {
-        super.onSaveInstanceState(saveInstanceState)
         saveInstanceState.putLong("Time", tvTime.text.toString().toLong())
+        super.onSaveInstanceState(saveInstanceState)
+
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-        super.onRestoreInstanceState(savedInstanceState)
         timer = savedInstanceState.getLong("Time", 60000)
         tvTime.text = timer.toString()
+        super.onRestoreInstanceState(savedInstanceState)
+
     }
 }
